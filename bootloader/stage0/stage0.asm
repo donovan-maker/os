@@ -1,7 +1,7 @@
 [org 0x7C00]
 [bits 16]
 
-mov [BOOT_DISK], dl
+;mov [BOOT_DISK], dl
 
 mov bp, 0x7C00
 mov sp, bp
@@ -55,7 +55,7 @@ welcome_msg: db "Welcome to the Atlas EFI Bootloader.", 0
 copyright_msg: db "Atlas EFI Bootloader (c) donovan-maker Donovan Black 2024 (MIT License).", 0
 fail_msg: db "Failed to boot.", 0
 
-BOOT_DISK: db 0
+BOOT_DISK: db 0x80
 
 times 510 - ($ - $$) db 0
 dw 0xAA55 ; Boot sector signature
