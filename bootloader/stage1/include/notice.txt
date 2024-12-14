@@ -1,0 +1,3 @@
+Note, that all of the code in this folder was made by my friend.
+Go show him some support: https://github.com/Glowman554
+https://github.com/Glowman554/nextfs-loader/blob/master/loader/stage1
